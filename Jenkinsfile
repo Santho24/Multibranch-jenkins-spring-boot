@@ -1,6 +1,6 @@
 node{
    stage('SCM Checkout'){
-       git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/vasantharajksks/Hello-Sprint-boot'
+       git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/vasantharajksks/Multibranch-jenkins-spring-boot.git'
    }
    stage('Mvn Package'){
      def mvnHome = tool name: 'maven-3', type: 'maven'
